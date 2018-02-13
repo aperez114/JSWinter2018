@@ -11,11 +11,11 @@ and open the template in the editor.
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <div>Objects</div>
-        <script>
+        <div>TODO write content</div>
+         <script>
             let names = {};
             
-            
+       /*     
             names.firstName = 'Alberto';
             names.lastName = 'Perez Garcia';
             
@@ -30,6 +30,13 @@ and open the template in the editor.
             console.log(names.phoneNumber);
             console.log(names.apColor);
             
+          */  
+         names = { Name : 'Alberto Perez Garcia', Number : '(401)572-6009', Color : 'Green'}
+         
+         for (let index in names)
+         {
+             console.log(index, names[index]);
+         }
             </script>
     </body>
 </html>
