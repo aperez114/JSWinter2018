@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>HTML</title>
+        <style type="text/css">
+            .border{border:1px solid black;}
+        </style>
+    </head>
+    <body>
+        <script type="text/javascript">
+
+            //Use this Array of objects to complete the assignment.
+            let body = document.querySelector("body");
+
+            let str = "";
+
+
+
+            let people = [
+                {first: "Jason", last: "Vorhees", credit: "Friday the 13th"},
+                {first: "Freddy", last: "Krueger", credit: "A Nightmare on Elm Street"},
+                {first: "Roger", last: "Rabbit", credit: "Who Framed Roger Rabbit"},
+                {first: "Kevin", last: "McCallister", credit: "Home Alone"},
+                {first: "Godzilla", last: "King of The Monsters", credit: "Godzilla"},
+                {first: "Buzz", last: "Lightyear", credit: "Toy Story"},
+                {first: "Marion", last: "Cobretti", credit: "Cobra"}
+            ]
+            for (let i = 0; i < people.length; i++) {
+                str += `<div id="{$i}" class="border">`;
+
+                str += `<p> ${people[i].first}</p>`;
+                str += `<p> ${people[i].last}</p>`;
+                str += `<p> ${people[i].credit}</p>`;
+
+                str += "</div>";
+            }
+            body.innerHTML += str;
+
+
+
+
+
+        </script>
+    </body>
+</html>
